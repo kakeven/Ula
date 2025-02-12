@@ -60,4 +60,4 @@ void ULA_DIV(int8_t *A, int8_t *Q, int8_t * M, int8_t * overflow){
 //TESTE DO GIT 
 // Neto vc é um fudido
 //TESTE DO GIT 123
-//kaua da o cu
+//neto da o cu;
