@@ -57,7 +57,4 @@ void ULA_DIV(int8_t *A, int8_t *Q, int8_t * M, int8_t * overflow){
 //void ULA_MUL_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 
-//TESTE DO GIT 
-// Neto vc é um fudido
-//TESTE DO GIT 123
-//neto da o cu;
+
