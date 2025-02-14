@@ -26,11 +26,13 @@ static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_
 }
 
 //Realiza o complemento de 2 do Registrador A e grava em A
-<<<<<<< HEAD
+
 static void complementador(uint8_t *A){
-=======
+}
+
+
 static void complementador(int8_t *A){
->>>>>>> 8a1268c2b38b02818c6612bd91c1211d1fdaf7aa
+
 
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 285
 }
