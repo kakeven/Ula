@@ -60,9 +60,7 @@ void ULA_DIV(int8_t *A, int8_t *Q, int8_t * M, int8_t * overflow){
 //void ULA_ADD_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_SUB_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_MUL_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
-<<<<<<< HEAD
+//void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 
-=======
-//void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
->>>>>>> 8a1268c2b38b02818c6612bd91c1211d1fdaf7aa
+//comentario
