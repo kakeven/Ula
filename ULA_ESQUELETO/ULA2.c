@@ -33,7 +33,7 @@ static void complementador(uint8_t *A){
 
 
 static void complementador(int8_t *A){
-	
+
 	//somador8bits();
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 285
 }
@@ -64,3 +64,6 @@ void ULA_DIV(int8_t *A, int8_t *Q, int8_t * M, int8_t * overflow){
 //void ULA_SUB_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_MUL_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
+
+
+
