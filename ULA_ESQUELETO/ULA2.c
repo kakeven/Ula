@@ -33,8 +33,11 @@ static void complementador(uint8_t *A){
 
 
 static void complementador(int8_t *A){
+	uint8_t complemento;
+	uint8_t co;
 
-	//somador8bits();
+	somador8bits(~(*A), 1, 0, &complemento, &co);
+	return complemento;
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 285
 }
 
