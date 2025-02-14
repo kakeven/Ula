@@ -8,7 +8,7 @@ static void somadorCompleto (uint8_t A, uint8_t B, uint8_t Cin, uint8_t * co, ui
 }
 
 //O somador bin�rio da ULA trata os dois números como inteiros sem sinal.
-//Entradas: Registrados A, B e cin(CarryIn), Saída: s(soma) e co(CarryOut)
+//Entradas: Registrados A, B e cin(CarryIn), Saída: s(soma) e co(CarryOut) 
 static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_t * s){
 	*co = cin;
 	uint8_t soma;
@@ -23,9 +23,6 @@ static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_
 
 //Realiza o complemento de 2 do Registrador A e grava em A
 static void complementador(uint8_t *A){
-
-
-
 
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 285
 }
@@ -57,7 +54,3 @@ void ULA_DIV(int8_t *A, int8_t *Q, int8_t * M, int8_t * overflow){
 //void ULA_MUL_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 
-//TESTE DO GIT 
-// Neto vc é um fudido
-//TESTE DO GIT 123
-//neto da o cu;
