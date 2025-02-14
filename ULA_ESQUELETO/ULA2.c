@@ -28,8 +28,8 @@ static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_
 
 //Realiza o complemento de 2 do Registrador A e grava em A
 
-static void complementador(uint8_t *A){
-}
+
+
 
 
 static void complementador(int8_t *A){

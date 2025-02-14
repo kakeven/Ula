@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdint.h>
 #include "ULA.h"
-
+#include "bit.h"
 
 
 /*int8_t soma(int8_t a, int8_t b) {
@@ -35,10 +35,10 @@ static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_
 
 
 int8_t completo2(int8_t num){
-	int8_t s;
-	somador8bits(num,0,0,0,&s);   
-    return s ;
-
+	uint8_t complemento;
+    uint8_t co;
+    somador8bits(~num, 1, 0, &co, &complemento); // ~num + 1
+    return complemento;
 
 }
 
@@ -46,7 +46,7 @@ int8_t completo2(int8_t num){
 
 
 int main(){
-    int8_t num = 128;
+    int8_t num = -125;
     int8_t numero_invertido;
     
 	
