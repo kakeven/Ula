@@ -16,13 +16,21 @@ static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_
 		somadorCompleto(bit_get(A,0),bit_get(B,0), *co, co,&soma);
 		A = A>>1;//deslocando os bits para direita a cada intera��o
 		B = B>>1;
-		if(soma==1)bit_set(*s,i);
-		else bit_clr(*s,i);
+		if(soma==1){
+			bit_set(*s,i);
+		}else{
+			bit_clr(*s,i);
+		}
+		
 	}
 }
 
 //Realiza o complemento de 2 do Registrador A e grava em A
+<<<<<<< HEAD
 static void complementador(uint8_t *A){
+=======
+static void complementador(int8_t *A){
+>>>>>>> 8a1268c2b38b02818c6612bd91c1211d1fdaf7aa
 
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 285
 }
@@ -52,5 +60,9 @@ void ULA_DIV(int8_t *A, int8_t *Q, int8_t * M, int8_t * overflow){
 //void ULA_ADD_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_SUB_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 //void ULA_MUL_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
+<<<<<<< HEAD
 //void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
 
+=======
+//void ULA_DIV_PF(float *A, float * B, int8_t * overflow, int8_t * underflow){}
+>>>>>>> 8a1268c2b38b02818c6612bd91c1211d1fdaf7aa
