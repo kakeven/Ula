@@ -28,10 +28,6 @@ static void somador8bits(uint8_t A, uint8_t B, uint8_t cin, uint8_t * co, uint8_
 
 //Realiza o complemento de 2 do Registrador A e grava em A
 
-
-
-
-
 static void complementador(int8_t *A){
 	uint8_t complemento;
 	uint8_t co;
@@ -44,6 +40,17 @@ static void complementador(int8_t *A){
 //Adi��o de A e B e grava resultado em A
 void ULA_ADD(int8_t *A, int8_t * B, int8_t * overflow){ 
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 287
+	
+	while (*B != 0) {
+        int8_t carry = *A & *B;  // Calcula o vai um
+        *A = *A ^ *B;          // Soma sem considerar o carry
+        *B = carry << 1;     // Move o carry para a esquerda
+    }
+    if(*A>127 || *A<completo2(127)){
+		overflow=1;
+	}
+
+
 }
 
 //Subtra��o de A e B e grava resultado em A

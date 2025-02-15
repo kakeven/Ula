@@ -11,9 +11,9 @@
 //int8_t - Inteiro com sinal de 8 bits
 //int16_t - Inteiro com sinal de 16 bits
 
-void static somadorCompleto (uint8_t A, uint8_t B, uint8_t Cin, uint8_t * co, uint8_t * s);
-void static somador8bits( uint8_t A, uint8_t B, uint8_t cin,  uint8_t * co, uint8_t * s);
-void static complementador(uint8_t *A);
+static void somadorCompleto (uint8_t A, uint8_t B, uint8_t Cin, uint8_t * co, uint8_t * s);
+static void somador8bits( uint8_t A, uint8_t B, uint8_t cin,  uint8_t * co, uint8_t * s);
+static void complementador(uint8_t *A);
 
 //Opera��es com n�meros Inteiros de 8 bits com sinal (-128 at� 127)
 void ULA_ADD(int8_t *A, int8_t * B, int8_t * overflow);
