@@ -51,7 +51,6 @@ void ULA_ADD(int8_t *A, int8_t * B, int8_t * overflow){
 }
 
 void ULA_ADD16B(int16_t *A, int16_t * B, int8_t * overflow){ 
-	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 287
 	int16_t C1 = bit_get(*A, 16);
 	int16_t C2 = bit_get(*B, 16);
 	while (*B != 0) {
@@ -92,7 +91,7 @@ void ULA_SUB(int8_t *A, int8_t * B, int8_t * overflow){
 //Multiplica��o de Q(8bits) com M(8bits) gera resultado de 16bits que est� em A(8bits) e Q(8bits)
 void ULA_MUL(int8_t * A, int8_t *Q, int8_t * M,  int8_t * overflow){
 	//Baseado no livro Willian Stallings 10ed, cap�tulo 10, pag. 293	
-	int16_t produto = 0, inv_produto;
+	int16_t produto = 0, inv_produto, um2;
 	int16_t multiplicando = (int16_t)(*Q); 
 	int16_t multiplicador = (int16_t)(*M); 
 	int8_t count = 8;
@@ -122,9 +121,9 @@ void ULA_MUL(int8_t * A, int8_t *Q, int8_t * M,  int8_t * overflow){
 
 	if ((sign_q ^ sign_m)) {
 
-		um = 1;
+		um2 = 1;
 		inv_produto = ~produto;
-		ULA_ADD16B(&inv_produto,&um,overflow);  
+		ULA_ADD16B(&inv_produto,&um2,overflow);  
 		produto = inv_produto;
 	}
 
